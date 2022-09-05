@@ -1,8 +1,21 @@
-main{
+main {
   margin: 30px;
   background-color: #f5f5f5f5;
   border-radius: 50px;
   height: 400px;
   width: 80vw;
   max-width: 800px;
+  font-family: Inter, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.die-container{
+  display: grid;
+  place-items: center;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
 }
