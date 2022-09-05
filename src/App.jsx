@@ -6,10 +6,13 @@ function App() {
   const [nums, setNums] = useState(generateNumbers())
   const dieElements = nums.map(num => <Die number={num} />)
 
-  function generateNumbers(n) {
+  function generateNumbers() {
     return Array.from({ length: 10 }, () => Math.ceil(Math.random() * 6))
   }
 
+  const reroll = () => {
+    setNums(generateNumbers())
+  }
 
 
 
@@ -18,6 +21,12 @@ function App() {
       <div className="die-container">
         {dieElements}
       </div>
+      <button
+        className='roll-button'
+        onClick={reroll}
+      >
+        Roll
+      </button>
     </main>
   )
 }
