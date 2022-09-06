@@ -7,7 +7,7 @@ const Die = (props) => {
       className={`${props.isHeld === true ? "die die-held" : "die"}`}
       onClick={props.handleClick}
     >
-      <h1 className="die-number">
+      <h1 className="die-number unselectable">
         {props.number}
       </h1>
     </div>
