@@ -37,5 +37,10 @@ main {
 }
 
 .roll-button:active {
+  background-color: #3921d3;
+}
+
+.roll-button:hover{
+  
   box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.29) inset;
 }
